@@ -51,3 +51,96 @@ html, body {
     text-decoration: none;
     border-radius: 25px;
 }
+
+/* PRINCIPAL */
+.principal {
+    background: url('../img/bg-image-principal.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70%;
+}
+
+.principal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.principal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 370px;
+}
+
+.principal-description p {
+    font-size: 20px;
+    color: var(--dark-grey);
+    padding-left: 35px;
+}
+
+.principal-description a {
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+
+.principal-diarista-text span {
+    color: var(--primary);
+}
+    
+.principal-diarista-text {
+    border: solid 2px var(--light-grey);
+    padding: 15px 35px;
+    border-radius: 70px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-grey);
+    text-align: left;
+    position: relative;
+}
+
+.principal-diarista-text::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: var(--light-grey);
+    background-image: url('../img/icon-search-principal.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+}
+
+.principal-image {
+    position: relative;
+}
+
+.principal-image::after, 
+.principal-image::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    right: 0px;
+}
+
+.principal-image::before {
+    width: 131px;
+    height: 131px;
+    background-color: var(--primary);
+    top: 80px;
+}
+
+.principal-image::after {
+    width: 37px;
+    height: 37px;
+    background-color: var(--light-grey);
+    bottom: 35px;
+    z-index: 50;
+}
